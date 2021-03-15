@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Assignment</string>
     <string name="adminGreetingTxt">Welcome Back CYK</string>
+    <string name="viewSalesTxt">View Sales Summary</string>
+    <string name="viewStaffTxt">View Staff Information</string>
+    <!-- TODO: Remove or change this placeholder text -->
 </resources>

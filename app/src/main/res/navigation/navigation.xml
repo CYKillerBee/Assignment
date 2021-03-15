@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/adminManagement">
+
+    <fragment
+        android:id="@+id/adminManagement"
+        android:name="com.example.assignment.ui.main.AdminManagement"
+        android:label="admin_management"
+        tools:layout="@layout/admin_management" >
+        <action
+            android:id="@+id/action_adminManagement_to_sales_Summary"
+            app:destination="@id/sales_Summary" />
+        <action
+            android:id="@+id/action_adminManagement_to_staff_Info"
+            app:destination="@id/staff_Info" />
+    </fragment>
+    <fragment
+        android:id="@+id/sales_Summary"
+        android:name="com.example.assignment.ui.main.Sales_Summary"
+        android:label="fragment_sales__summary"
+        tools:layout="@layout/fragment_sales__summary" />
+    <fragment
+        android:id="@+id/staff_Info"
+        android:name="com.example.assignment.ui.main.Staff_Info"
+        android:label="fragment_staff__info"
+        tools:layout="@layout/fragment_staff__info" />
+</navigation>
