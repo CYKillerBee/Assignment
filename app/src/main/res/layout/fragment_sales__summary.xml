@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.Sales_Summary">
+    tools:context=".ui.main.SalesSummary"
+    >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:text="Sales Summary" />
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/black"
+            android:id="@+id/toolbarSales"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title="Sales Summary"
+            app:titleMarginStart="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_24"
+            tools:ignore="MissingConstraints">
+        </androidx.appcompat.widget.Toolbar>
+
+          <com.google.android.material.tabs.TabLayout
+              android:id="@+id/tabSalas"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:tabMaxWidth="0dp"
+              app:tabGravity="fill"
+              app:tabBackground="@color/teal_200"
+              app:tabTextColor="@color/black"
+              app:tabIndicator="@color/white">
+
+          </com.google.android.material.tabs.TabLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
 
 </FrameLayout>

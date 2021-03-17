@@ -7,7 +7,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageButton
 import androidx.navigation.fragment.findNavController
 import com.example.assignment.R
@@ -22,7 +21,12 @@ class AdminManagement : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
+
+
         return inflater.inflate(R.layout.admin_management, container, false)
+
+
+
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -36,11 +40,13 @@ class AdminManagement : Fragment() {
         Log.d("Start","onViewCreated")
 
         view.findViewById<ImageButton>(R.id.btnViewSales).setOnClickListener {
-            findNavController().navigate(R.id.action_adminManagement_to_sales_Summary)
+            findNavController().navigate(R.id.action_adminManagement_to_salesSummary)
         }
 
         view.findViewById<ImageButton>(R.id.btnStaffInfo).setOnClickListener {
-            findNavController().navigate(R.id.action_adminManagement_to_staff_Info)
+            findNavController().navigate(R.id.action_adminManagement_to_staffInfo)
         }
     }
+
+
 }

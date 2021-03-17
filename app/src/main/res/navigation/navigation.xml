@@ -11,20 +11,19 @@
         android:label="admin_management"
         tools:layout="@layout/admin_management" >
         <action
-            android:id="@+id/action_adminManagement_to_sales_Summary"
-            app:destination="@id/sales_Summary" />
+            android:id="@+id/action_adminManagement_to_salesSummary"
+            app:destination="@id/salesSummary" />
         <action
-            android:id="@+id/action_adminManagement_to_staff_Info"
-            app:destination="@id/staff_Info" />
+            android:id="@+id/action_adminManagement_to_staffInfo"
+            app:destination="@id/staffInfo" />
     </fragment>
     <fragment
-        android:id="@+id/sales_Summary"
-        android:name="com.example.assignment.ui.main.Sales_Summary"
+        android:id="@+id/salesSummary"
+        android:name="com.example.assignment.ui.main.SalesSummary"
         android:label="fragment_sales__summary"
         tools:layout="@layout/fragment_sales__summary" />
     <fragment
-        android:id="@+id/staff_Info"
-        android:name="com.example.assignment.ui.main.Staff_Info"
-        android:label="fragment_staff__info"
-        tools:layout="@layout/fragment_staff__info" />
+        android:id="@+id/staffInfo"
+        android:name="com.example.assignment.ui.main.StaffInfo"
+        android:label="StaffInfo" />
 </navigation>
